@@ -18,7 +18,7 @@ If you haven't already, please get an API key from OpenAI and set it as you envi
 export OPENAI_API_KEY='your-key-here'
 ```   
 ### 3. Load and index pdf documents for RAG:
-The applicaiton supports context retreival from ingested pdf files. First, copy all pdf files you need indexed into the folder called "pdfs". Then run the following script to create the embeddings:
+The application supports context retrieval from ingested pdf files. First, copy all pdf files you need indexed into the folder called "pdfs". Then run the following script to create the embeddings:
 ```
 python index.py
 ```
@@ -26,11 +26,10 @@ You can run the above script anytime you add new pdf files to the "pdfs" folder 
 ### 4. If needed, modify the system message:
 The system message lets you provide additional information to the chatbot that is included in every conversation. Users can modify the system message by editing the "system_message.txt" file.
 ### 5. Run the flask app:
-Run the flask applicaiton with the following command:
+Run the flask application with the following command:
 ```
 python app.py
 ```
-The application should me available through your browser at http://127.0.0.1:5000
+The application should be available through your browser at http://127.0.0.1:5000
 
 **Note:** You can try using a different model by changing the MODEL_NAME parameter in app.py.
-
