@@ -104,7 +104,7 @@ def chat():
     
     # Save the updated memory to the session
     session['conversation_memory'] = [serialize_message(msg) for msg in memory.chat_memory.messages]
-    print(session['conversation_memory'])
+    #print(session['conversation_memory'])
     return ai_message
 
 if __name__ == "__main__":
