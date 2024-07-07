@@ -1,0 +1,5 @@
+*.pyc
+chroma_db/*
+venv/*
+indexed_pdfs.json
+pdfs/*
